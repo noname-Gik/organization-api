@@ -8,6 +8,6 @@ namespace OrganizationAPI.Models
         public int ID { get; protected set; }
         [Required]
         public string name { get; set; }
-        // list<> к списку ролей
+        public List<OrganizationRole> OrganizationRole { get; set; }
     }
 }

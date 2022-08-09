@@ -11,6 +11,8 @@ namespace OrganizationAPI.Data
             modelBuilder.UseSerialColumns();
         }
         public DbSet<Organizations> Organizations { get; set; }
+        public DbSet<OrganizationRole> OrganizationRole { get; set; }
+        public DbSet<RoleUser> RoleUser { get; set; }
         public DbSet<Roles> Roles { get; set; }
         public DbSet<Users> Users { get; set; }
     }
